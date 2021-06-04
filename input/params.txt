@@ -1,0 +1,9 @@
+XORtype=TwoPoint;         		//SinglePoint,   TwoPoint
+mutationType=Inversion;   	//SingleBitFlip, Inversion, Flip, Multiple
+selectionType=RouletteWheel;	//RouletteWheel, Tournament
+crossoverProbability=0.95;
+mutationProbability=0.95;
+population=100;
+consecutive_generations=10;
+minFitnessDifference=0.5;
+maximumGenerations=20;
