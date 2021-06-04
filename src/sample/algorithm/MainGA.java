@@ -5,11 +5,6 @@ import org.knowm.xchart.BitmapEncoder;
 import org.knowm.xchart.QuickChart;
 import org.knowm.xchart.SwingWrapper;
 import org.knowm.xchart.internal.chartpart.Chart;
-import sample.Form;
-import sample.algorithm.Crossovers;
-import sample.algorithm.Mutation;
-import sample.algorithm.Population;
-import sample.algorithm.Selection;
 import sample.genetic.Chromosomes;
 import sample.genetic.Genes;
 import sample.items.Bin;
@@ -680,7 +675,7 @@ public class MainGA extends JPanel
 
             int counter = 0;
 //Вывод
-            System.out.println("Genesration, averageFitness, BestFitness, leastOpenedBins");
+           // System.out.println("Genesration, averageFitness, BestFitness, leastOpenedBins");
             writer.write("Genesration,  averageFitness,  BestFitness, leastOpenedBins\n");
             //while (counter < maximumGenesrations && consGenesration <consecutive_generations)
             while (counter < maximumGenesrations)
