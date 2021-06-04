@@ -750,8 +750,12 @@ public class MainGA extends JPanel
 
         ReadData(path_bin, path_item, path_toConfig);
 
-        System.out.println("#items="+Items.size());
-        System.out.println("#bins="+Bins.size());
+//        System.out.println("#items="+Items.size());
+//        System.out.println("#bins="+Bins.size());
+
+        JOptionPane.showMessageDialog(null, "Всего контейнеров: " +Bins.size() +"\n"+
+                "Всего прямоугольников: " +Items.size());
+
 
         decreasingItemsSortedByWidth = Rectangl.RecSorter(Items, "Width", "decreasing");
         decreasingItemsSortedByHeight = Rectangl.RecSorter(Items, "Height", "decreasing");
