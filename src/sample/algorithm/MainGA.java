@@ -700,10 +700,14 @@ public class MainGA extends JPanel
 
                // System.out.println(counter+",      "+prevAvgFit+",       "+prevGenesration.get(0).fitness+",          "+prevGenesration.get(0).bins);
                 writer.write(counter+","+prevAvgFit+","+prevGenesration.get(0).fitness+","+prevGenesration.get(0).bins+"\n");
+
             }
             writer.close();
 
             Chromosomes best= prevGenesration.get(0);
+
+            JOptionPane.showMessageDialog(null, "Количество использованных контейнеров: " + prevGenesration.get(0).bins+"\n"+ "Все данные сохранены в out файле");
+
 
             //график
 
@@ -726,7 +730,7 @@ public class MainGA extends JPanel
 
     public static void main(String[] args) throws Exception
     {
-//Пути со значениями
+        //Пути со значениями
         String output_file = "./output.csv";
 
         String path_bin = "./input/bins_input.csv";
